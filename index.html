@@ -1,233 +1,190 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monesh Rathod — Hardware &amp; PCB Design Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-        <!-- ===== CSS ===== -->
-        <link rel="stylesheet" href="assets/css/styles.css">
-
-        <!-- ===== BOX ICONS ===== -->
-        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
-        <title>Monesh Rathod - Portfolio Website</title>
-    </head>
-    
-    <body>
-        <!--===== HEADER =====-->
-        <header class="l-header">
-            <nav class="nav bd-grid">
-                <div>
-                    <a href="#" class="nav__logo">Monesh Rathod</a>
-                </div>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav__toggle" id="nav-toggle">
-                    <i class='bx bx-menu'></i>
-                </div>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a href="#home" class="brand">MONESH RATHOD</a>
+            <nav class="nav-links" id="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#project">Project</a>
+                <a href="#contact">Contact</a>
             </nav>
-        </header>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="icon-btn" aria-label="Toggle Day/Night Mode" title="Toggle Day / Night">☀️ Day</button>
+                <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Menu">☰</button>
+            </div>
+        </div>
+    </header>
 
-        <main class="l-main">
-            <!--===== HOME =====-->
-            <section class="home" id="home">
-                <div class="home__container bd-grid">
-                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
-
-                    <div class="home__scroll">
-                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Scroll down</a>
-                    </div>
-
-                    <img src="assets/img/perfi.png" alt="" class="home__img">
+    <main>
+        <section id="home" class="section hero">
+            <div class="container">
+                <p class="eyebrow">HARDWARE &amp; PCB DESIGN ENGINEER</p>
+                <h1>Monesh Rathod</h1>
+                <p class="lead">
+                    I design high-speed PCBs, RF hardware, and mission-critical embedded systems—from schematic capture and signal integrity simulation to board bring-up.
+                </p>
+                <div class="btn-row">
+                    <a href="#project" class="btn btn-solid">View Projects</a>
+                    <a href="#contact" class="btn btn-outline">Contact Me</a>
                 </div>
-            </section>
-            
-            <!--===== ABOUT =====-->
-            <section class="about section" id="about">
-                <h2 class="section-title">About</h2>
+            </div>
+        </section>
 
-                <div class="about__container bd-grid">
-                    <div class="about__img">
-                        <img src="assets/img/perfil.png" alt="">
-                    </div>
-
+        <section id="about" class="section border-top">
+            <div class="container">
+                <p class="eyebrow">01 / ABOUT</p>
+                <h2>About Me</h2>
+                <p class="body-text">
+                    Hardware and PCB Design Engineer with relevant experience in both service and product-based companies with a strong background in HDI, High-Speed, and RF PCB design for frequencies ranging 0.03 to 2.4GHz, up to 16 layer. I have developed hardware for Automotive, Consumer, Defense and Aerospace domain’s, with a proven ability to design, analyze, and debug circuits. I am seeking a career opportunity where I can utilize my skills and knowledge while making significant contributions to the organization’s success.
+                </p>
+                <div class="info-strip">
                     <div>
-                        <h2 class="about__subtitle">I'm Monesh Rathod</h2>
-                        <span class="about__profession">A Noob Developer</span>
-                        <p class="about__text">I'm an Second Year Electronic & Communication Engineering Student. A deeply passionate learner about Programming, Embedded Software, Machine Learning & Artificial Intelligence.
-                            <br>
-                        I also have intersted in Content Writing, Website SEO and Graphic Designing.
-                        </p>
-
-                        <div class="about__social">
-                            <a href="https://www.linkedin.com/in/moneshrathod2/" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
-                            <a href="https://github.com/moneshrathod" class="about__social-icon"><i class='bx bxl-github' ></i></a>
-                            <a href="https://t.me/moneshrathod" class="about__social-icon"><i class='bx bxl-telegram' ></i></a>
-                            <a href="https://twitter.com/MoneshRathod" class="about__social-icon"><i class='bx bxl-twitter' ></i></a>
-                            <a href="https://www.instagram.com/moneshrathod/" class="about__social-icon"><i class='bx bxl-instagram' ></i></a>
-                        </div>
+                        <span class="mono-label">CURRENT ROLE</span>
+                        <p>Hardware Design Engineer @ Star Aerospace</p>
+                    </div>
+                    <div>
+                        <span class="mono-label">PREVIOUS</span>
+                        <p>BotLab Dynamics • Pinetics • BatteryPool</p>
+                    </div>
+                    <div>
+                        <span class="mono-label">CERTIFICATION</span>
+                        <p>Teledyne LeCroy Gigabit Channel Design (SI)</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--===== SKILLS =====-->
-            <section class="skills section" id="skills">
-                <h2 class="section-title">Skills</h2>
-
-                <div class="skills__container bd-grid">
-                    <div class="skills__box">
-                        <h3 class="skills__subtitle">Programming</h3>
-                        <span class="skills__name">C++</span>
-                        <span class="skills__name">Python</span>
-                        <span class="skills__name">Javascript</span>
-
-                        <h3 class="skills__subtitle">Web Development</h3>
-                        <span class="skills__name">HTML</span>
-                        <span class="skills__name">CSS</span>
-                        <span class="skills__name">WordPress</span>
-                        
-                        <h3 class="skills__subtitle">Design</h3>
-                        <span class="skills__name">Canva</span>
-                        <span class="skills__name">Figma</span>
-                        <span class="skills__name">Photoshop</span>
+        <section id="skills" class="section border-top">
+            <div class="container">
+                <p class="eyebrow">02 / SKILLS</p>
+                <h2>Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="box">
+                        <h3>EDA Tools</h3>
+                        <p>Altium Designer, Cadence OrCAD and Allegro 17.4, KiCAD</p>
                     </div>
-
-                    <div class="skills__img">
-                        <img src="assets/img/skills.jpg" alt="">
+                    <div class="box">
+                        <h3>Circuit Simulation Tools</h3>
+                        <p>Keysight ADS, HyperLynx, LTSpice, PSpice</p>
                     </div>
-                </div>
-            </section>
-
-            <!--===== PORTFOLIO =====-->
-            <section class="portfolio section" id="portfolio">
-                <h2 class="section-title">Portfolio</h2>
-
-                <div class="portfolio__container bd-grid">
-                    <div class="portfolio__img">
-                        <img src="assets/img/work1.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
+                    <div class="box">
+                        <h3>Hardware Interfaces</h3>
+                        <p>DDRx, LPDDRx, MIPI DSI, LVDS, Gigabit Ethernet, JESD204, USBx, I2C, SPI, UART, and Others</p>
                     </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work2.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
+                    <div class="box">
+                        <h3>Hardware Tools</h3>
+                        <p>DSO MSO Oscilloscopes, Logic Analyzers, Multimeter, NanoVNA, Soldering Gun</p>
                     </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work3.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work4.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work5.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
-                    </div>
-                    <div class="portfolio__img">
-                        <img src="assets/img/work6.jpg" alt="">
-
-                        <div class="portfolio__link">
-                            <a href="#" class="portfolio__link-name">View details</a>
-                        </div>
+                    <div class="box">
+                        <h3>Hardware Standards</h3>
+                        <p>MIL-STD-810, DO-254, VITA 46 / VITA 65 (VPX), JS55555</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
 
-            <!--===== CONTACT =====-->
-            <section class="contact section" id="contact">
-                <h2 class="section-title">Contact</h2>
-
-                <div class="contact__container bd-grid">
-                    <div class="contact__info">
-                        <h3 class="contact__subtitle">EMAIL</h3>
-                        <span class="contact__text">moneshrathod2@gmail.com</span>
-
-                        <h3 class="contact__subtitle">PHONE</h3>
-                        <span class="contact__text">+91 8888888888</span>
-
-                        <h3 class="contact__subtitle">ADDRESS</h3>
-                        <span class="contact__text">Pune, Maharashtra, India</span>
+        <section id="project" class="section border-top">
+            <div class="container">
+                <div class="section-top-bar">
+                    <div>
+                        <p class="eyebrow">03 / PROJECT</p>
+                        <h2>Hardware Projects</h2>
                     </div>
+                    <div class="project-tools">
+                        <button id="toggle-editor-btn" class="btn btn-outline small-btn" type="button">+ Manage / Add Project</button>
+                    </div>
+                </div>
 
-                    <form action="" class="contact__form">
-                        <div class="contact__inputs">
-                            <input type="text" placeholder="Name" class="contact__input">
-                            <input type="mail" placeholder="Email" class="contact__input">
+                <div id="project-editor" class="editor-panel hidden">
+                    <div class="editor-header">
+                        <h3 id="editor-form-title">Add / Edit Project</h3>
+                        <p class="hint">Changes save immediately in your browser. Click <strong>"⬇ Download updated script.js"</strong> to replace <code>script.js</code> in your GitHub repo.</p>
+                    </div>
+                    <form id="project-form" class="editor-form">
+                        <input type="hidden" id="edit-index" value="-1">
+                        <div class="form-row">
+                            <input type="text" id="proj-title" placeholder="Project Title" required>
+                            <input type="text" id="proj-org" placeholder="Organization / Year" required>
                         </div>
-
-                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
-                        <a href="mailto:moneshrathod2@gmail.com">
-                        <input type="button" value="Send" class="contact__button">
-                        </a>
+                        <div class="form-row">
+                            <input type="text" id="proj-tags" placeholder="Tags comma-separated">
+                            <input type="text" id="proj-image" placeholder="Image path (e.g., assets/images/rf-amplifier.jpg)">
+                        </div>
+                        <input type="url" id="proj-repo" placeholder="GitHub Repo URL (optional)">
+                        <textarea id="proj-desc" rows="3" placeholder="Short technical summary..." required></textarea>
+                        <div class="btn-row">
+                            <button type="submit" class="btn btn-solid small-btn">Save Project</button>
+                            <button type="button" id="cancel-edit-btn" class="btn btn-outline small-btn">Clear</button>
+                            <button type="button" id="export-js-btn" class="btn btn-outline small-btn">⬇ Download updated script.js</button>
+                            <button type="button" id="reset-default-btn" class="btn btn-outline small-btn">Reset Defaults</button>
+                        </div>
                     </form>
                 </div>
-            </section>
-        </main>
 
-        <!--===== FOOTER =====-->
-        <footer class="footer section">
-            <div class="footer__container bd-grid">
-                <div class="footer__data">
-                    <h2 class="footer__title">MONESH RATHOD</h2>
-                    <p class="footer__text">
-                        Made With ❤️ By Monesh Rathod 2020 <br> 
-                        ©️ Copyright - Jhon Doe
-                    </p>
+                <div class="slider-wrapper">
+                    <div id="projects-container" class="slider-stage"></div>
+                    <div class="slider-controls" id="slider-controls">
+                        <button id="prev-slide-btn" class="btn btn-outline small-btn" type="button">← Prev</button>
+                        <div class="slider-status">
+                            <span id="slide-counter" class="mono-label">1 / 5</span>
+                            <div id="slide-dots" class="slide-dots"></div>
+                        </div>
+                        <button id="next-slide-btn" class="btn btn-outline small-btn" type="button">Next →</button>
+                    </div>
                 </div>
-
-                <div class="footer__data">
-                    <h2 class="footer__title">EXPLORE</h2>
-                    <ul>
-                        <li><a href="#home" class="footer__link">Home</a></li>
-                        <li><a href="#about" class="footer__link">About</a></li>
-                        <li><a href="#skills" class="footer__link">Skills</a></li>
-                        <li><a href="#portfolio" class="footer__link">Portfolio</a></li>
-                        <li><a href="#Contact" class="footer__link">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer__data">
-                    <h2 class="footer__title">FOLLOW</h2>
-                    <a href="https://www.linkedin.com/in/moneshrathod2/" class="footer__social"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="https://github.com/moneshrathod" class="footer__social"><i class='bx bxl-github' ></i></a>
-                    <a href="https://t.me/moneshrathod" class="footer__social"><i class='bx bxl-telegram' ></i></a>
-                    <a href="https://www.instagram.com/moneshrathod/" class="footer__social"><i class='bx bxl-instagram' ></i></a>
-                    <a href="https://twitter.com/MoneshRathod" class="footer__social"><i class='bx bxl-twitter' ></i></a>
-                   
-                </div>
-
-
             </div>
-        </footer>
+        </section>
 
-        <!--===== SCROLL REVEAL =====-->
-        <script src="https://unpkg.com/scrollreveal"></script>
+        <section id="contact" class="section border-top">
+            <div class="container">
+                <p class="eyebrow">04 / CONTACT</p>
+                <h2>Contact</h2>
+                <p class="body-text">Feel free to reach out for hardware engineering opportunities, PCB design consultations, or technical discussions.</p>
+                <div class="contact-list">
+                    <div class="contact-static">
+                        <span class="mono-label">ADDRESS</span>
+                        <span>Bengaluru, Karnataka, India</span>
+                    </div>
+                    <a href="mailto:monesh2work@gmail.com" class="contact-item">Email: monesh2work@gmail.com ↗</a>
+                    <a href="https://www.linkedin.com/in/moneshrathod2/" target="_blank" rel="noopener">LinkedIn: /in/moneshrathod2 ↗</a>
+                    <a href="https://github.com/moneshrathod" target="_blank" rel="noopener">GitHub: /moneshrathod ↗</a>
+                </div>
+            </div>
+        </section>
+    </main>
 
-        <!--===== MAIN JS =====-->
-        <script src="assets/js/main.js"></script>
-    </body>
+    <footer class="footer border-top">
+        <div class="container footer-inner">
+            <span>© 2026 Monesh Rathod</span>
+            <span class="mono-label">BENGALURU, KARNATAKA, INDIA</span>
+        </div>
+    </footer>
+
+    <div id="confirm-modal" class="modal-overlay hidden" role="dialog" aria-modal="true">
+        <div class="modal-box">
+            <h4 id="modal-title">Confirm Action</h4>
+            <p id="modal-message">Are you sure?</p>
+            <div class="btn-row">
+                <button id="modal-confirm-btn" class="btn btn-solid small-btn" type="button">Confirm</button>
+                <button id="modal-cancel-btn" class="btn btn-outline small-btn" type="button">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="script.js"></script>
+</body>
 </html>
