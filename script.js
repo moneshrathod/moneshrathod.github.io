@@ -52,8 +52,8 @@ const DEFAULT_PROJECTS = [
         "repo": "https://github.com/moneshrathod"
     },
     {
-        "title": "Custom Fall Detection System PCB (2nd Prize Capstone)",
-        "org": "Savitribai Phule Pune University • B.E. Project",
+        "title": "Custom Fall Detection System PCB (2nd Prize Winner)",
+        "org": "B.Tech Project",
         "desc": "Designed, fabricated, soldered, and brought up a custom PCB integrating microcontroller, GPS, and GSM modules for automated emergency fall alerts.",
         "tags": [
             "Custom PCB",
@@ -124,6 +124,16 @@ function showToast(msg) {
 
 const STORAGE_KEY = "bw_projects_v3";
 let projects = JSON.parse(localStorage.getItem(STORAGE_KEY)) || [...DEFAULT_PROJECTS];
+projects = projects.map((project) => {
+    if (project.title === "Custom Fall Detection System PCB (2nd Prize Capstone)") {
+        project.title = "Custom Fall Detection System PCB (2nd Prize Winner)";
+    }
+    if (project.title === "Custom Fall Detection System PCB (2nd Prize Winner)" && project.org && project.org.startsWith("Savitribai")) {
+        project.org = "B.Tech Project";
+    }
+    return project;
+});
+localStorage.setItem(STORAGE_KEY, JSON.stringify(projects));
 let currentSlide = 0;
 
 const container = document.getElementById("projects-container");
